@@ -98,7 +98,7 @@ header {
     display: grid;
     grid-template: auto auto / 60% 40%;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 h1 {
@@ -145,9 +145,8 @@ div.main {
     box-sizing: border-box;
     padding-left: 5px;
     grid-area: main;
-    border: 1px solid white;
     display: grid;
-    grid-template: repeat(5, auto) / 40% 60%;
+    grid-template: repeat(3, auto) 220px 300px / auto auto;
     grid-column-gap: 80px;
     grid-row-gap: 20px;
 }
@@ -159,16 +158,21 @@ div.main {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.contact h3, .general h3{
-    padding-bottom: 10px;
+.contact h3, .general h3, .education h3,
+ .experience h3, .languages h3, 
+ .skills h3{
+     box-sizing: border-box;
+     width: 550px;
+    padding-bottom: 25px;
 }
 
-.contact p, .general p {
+.contact p, .general p, .education p,
+ .experience p, .languages p, 
+ .skills p{
     padding-bottom: 20px;
 }
 
 .general {
-    border: 1px solid black;
     display: grid;
     grid-area: 2 / 1 / 4 / 2;
 }
@@ -185,11 +189,40 @@ div.main {
 }
 
 .languages {
-    display: grid;
     grid-area: 4 / 1 / 5 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.languages .french, .languages .dutch, .languages .english, .languages .german {
+    box-sizing: border-box;
+    width: 550px;
+}
+
+.languages .french {
+    margin-top: 61px;
 }
 
 .skills {
-    display: grid;
+    box-sizing: border-box;
     grid-area: 5 / 1 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.skills .hard, .skills .soft {
+    box-sizing: border-box;
+    width: 550px;
+}
+.skills h4 {
+    margin-bottom: 15px;
+}
+
+.skills .hard {
+    margin-top: 61px;
+}
+
+li {
+list-style: none;   
 }
