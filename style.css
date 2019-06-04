@@ -177,6 +177,14 @@ div.main {
     grid-area: 2 / 1 / 4 / 2;
 }
 
+.general .icon {
+    margin: auto auto auto 0;
+    display: flex;
+}
+
+.general img {
+    height: 40px;
+}
 
 .education {
     display: grid;
