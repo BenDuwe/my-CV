@@ -114,12 +114,8 @@ h1 {
 }
 
 .dot {
-    font-family: 'Anton', sans-serif;
-    font-size: 3.32em;
-    font-style: italic; 
     height: 200px;
     width: 200px;
-    color: #2c383b;
     background-color: #4bc0b0;
     box-sizing: border-box;
     border-radius: 50%;
@@ -127,8 +123,12 @@ h1 {
     grid-area: 1 / 2 / 3 / 3;
     justify-self: center;
     align-self: center;
-    padding: 46px;
     margin: auto;
+}
+
+.dot img {
+    height: 250px;
+    border-radius: 50%;
 }
 
 h2 {
@@ -161,8 +161,8 @@ div.main {
 .contact h3, .general h3, .education h3,
  .experience h3, .languages h3, 
  .skills h3{
-     box-sizing: border-box;
-     width: 550px;
+    box-sizing: border-box;
+    width: 550px;
     padding-bottom: 25px;
 }
 
