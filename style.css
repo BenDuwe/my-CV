@@ -141,7 +141,7 @@ h2 {
     grid-area: 2 / 1 / 3 / 2;
     font-size: 1.33em;
     letter-spacing: 3px;
-    -webkit-text-stroke: 1px #2c383b;
+    -webkit-text-stroke: 0.5px #2c383b;
 }
 
 div.main {
@@ -188,6 +188,11 @@ div.main {
 
 .contact img {
     height: 40px;
+    transition: 1s;
+}
+
+.contact img:hover {
+    height: 60px;
 }
 
 .education {
