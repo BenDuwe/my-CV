@@ -1,40 +1,44 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 21px;
+    font-size: 16px;
 }
 
 /* Scrollbar adjustment*/
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
+    height: 10px;
+}
 
-  ::-webkit-scrollbar-track-piece {
-    background: #4bc0b0; 
-  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 
-  ::-webkit-scrollbar-corner{
+::-webkit-scrollbar-track-piece {
     background: #4bc0b0;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+}
+
+::-webkit-scrollbar-corner {
+    background: #4bc0b0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /* Scrollbar adjustment end*/
 
-html, body {
+html,
+body {
     height: 100vh;
 }
 
-h1, h3 {
+h1,
+h3 {
     font-family: 'Anton', sans-serif;
     color: #4bc0b0;
     text-transform: uppercase;
@@ -54,7 +58,10 @@ h3 {
     -webkit-text-stroke: 1px #2c383b;
 }
 
-p, li, h5, h2 {
+p,
+li,
+h5,
+h2 {
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 2px;
@@ -69,13 +76,14 @@ body {
 
 .page-wrapper {
     display: grid;
-    grid-template-columns: 80px 85vw;
+    grid-template-columns: 80px auto;
     grid-auto-rows: 2fr 7fr;
     grid-column-gap: 20px;
     grid-template-areas:
-    "side hd"
-    "side main";
+        "side hd"
+        "side main";
 }
+
 .side {
     grid-area: side;
     background-color: #4bc0b0;
@@ -90,13 +98,12 @@ section {
 
 header {
     display: grid;
-    grid-template: auto auto / auto auto;
+    grid-template: 60% 40% / 60% 40%;
     margin-top: 30px;
     margin-bottom: 80px;
 }
 
 h1 {
-    margin-right: 70px;
     font-size: 5.4em;
     font-style: italic;
     letter-spacing: 4px;
@@ -108,20 +115,19 @@ h1 {
 }
 
 .dot {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     background-color: #4bc0b0;
     box-sizing: border-box;
     border-radius: 50%;
-    box-shadow: 0px 0px 30px 20px rgba(75,192,176,1);
+    box-shadow: 0px 0px 30px 20px rgba(75, 192, 176, 1);
     grid-area: 1 / 2 / 3 / 3;
-    justify-self: center;
-    align-self: center;
-    margin: auto;
+    justify-self: flex-start;
+    align-self: flex-start;
 }
 
 .dot img {
-    height: 250px;
+    height: 200px;
     border-radius: 50%;
     justify-self: center;
     align-self: center;
@@ -134,7 +140,6 @@ h2 {
     grid-area: 2 / 1 / 3 / 2;
     font-size: 1.33em;
     letter-spacing: 3px;
-    -webkit-text-stroke: 0.5px #2c383b;
 }
 
 div.main {
@@ -142,8 +147,8 @@ div.main {
     padding-left: 5px;
     grid-area: main;
     display: grid;
-    grid-template: repeat(3, auto) 220px 300px / auto auto;
-    grid-column-gap: 80px;
+    grid-template: repeat(3, auto) auto auto / auto auto;
+    grid-column-gap: 40px;
     grid-row-gap: 20px;
 }
 
@@ -153,18 +158,21 @@ div.main {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.contact h3, .general h3, .education h3,
- .experience h3, .languages h3, 
- .skills h3{
+.contact h3,
+.general h3,
+.education h3,
+.experience h3 {
     box-sizing: border-box;
-    width: 550px;
+    width: 450px;
     height: 61px;
     padding-bottom: 25px;
 }
 
-.contact p, .general p,
- .experience p, .languages p, 
- .skills p{
+.contact p,
+.general p,
+.experience p,
+.languages p,
+.skills p {
     padding-bottom: 20px;
 }
 
@@ -172,74 +180,87 @@ div.main {
     grid-area: 2 / 1 / 4 / 2;
 }
 
-.contact .icon {
-    margin: auto auto auto 0;
-    display: flex;
-}
-
-.contact img {
-    height: 40px;
+.icon i {
+    font-size: 3rem;
     transition: 1s;
 }
 
-.contact img:hover {
-    height: 60px;
+.contact i:hover {
+    font-size: 3.5rem;
 }
 
 .education {
     grid-area: 1 / 2 / 3 / 3;
 }
 
+.education h4,
+.experience h4 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+}
+
 .education ul {
-        padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .experience {
     grid-area: 3 / 2 / 4 / 3;
 }
+
 .experience h4 {
     padding-bottom: 10px;
 }
 
 .languages {
     grid-area: 4 / 1 / 5 / 3;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.languages .french, .languages .dutch, .languages .english, .languages .german {
-    box-sizing: border-box;
-    width: 550px;
+    display: grid;
+    grid-template: 61px 40px 40px / 40% auto
 }
 
-.languages .french {
-    margin-top: 61px;
+.languages h3 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.languages .french,
+.languages .dutch,
+.languages .english,
+.languages .german {
+    box-sizing: border-box;
+}
+
+.languages span {
+    font-weight: lighter;
 }
 
 .skills {
     box-sizing: border-box;
     grid-area: 5 / 1 / 6 / 3;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.skills .hard, .skills .soft {
-    box-sizing: border-box;
-    width: 550px;
+.skills h3 {
+    height: 61px;
+    width: 100%;
 }
+
+.skills .hard,
+.skills .soft {
+    width: 376px;
+}
+
 .skills h4 {
     margin-bottom: 15px;
 }
 
-.skills .hard {
-    margin-top: 61px;
-}
 
-.skills li, .experience li {
+.skills li,
+.experience li {
     padding-bottom: 8px;
 }
 
 li {
-list-style: none;   
+    list-style: none;
 }
