@@ -109,9 +109,6 @@ h1 {
     letter-spacing: 4px;
     box-sizing: border-box;
     grid-area: 1 / 1 / 2 / 2;
-    font-size: 5.4em;
-    font-style: italic;
-    letter-spacing: 4px;
 }
 
 .dot {
