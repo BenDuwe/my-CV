@@ -1,6 +1,14 @@
+.card-body .jc-sb, .card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  font-size: 95%;
 }
 
 body {
@@ -9,27 +17,82 @@ body {
 }
 
 #content-wrapper {
-  margin-left: 10px;
+  margin: 10px;
 }
 #content-wrapper li {
   list-style: none;
 }
-#content-wrapper h1, #content-wrapper h3, #content-wrapper h4 {
+#content-wrapper .inline-h {
+  display: inline-block;
+}
+#content-wrapper h1,
+#content-wrapper h3,
+#content-wrapper h4,
+#content-wrapper .h4-style {
   font-family: "Anton", sans-serif;
   color: #4bc0b0;
 }
-#content-wrapper p, #content-wrapper li, #content-wrapper h5, #content-wrapper h2 {
+#content-wrapper p,
+#content-wrapper li,
+#content-wrapper h5,
+#content-wrapper h2,
+#content-wrapper a {
   color: white;
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 2px;
 }
+#content-wrapper a {
+  text-decoration: none;
+}
 #content-wrapper h1 {
   font-size: 4rem;
   font-style: italic;
-  font-weight: bold;
+  font-weight: lighter;
+}
+#content-wrapper h3 {
+  font-size: 1.2rem;
+}
+
+.card-head {
+  padding: 5px 5px 0px;
+  background-color: #273235a9;
+  border-bottom: 2px solid #4bc0b0;
+}
+.card-head i {
+  color: #4bc0b0;
+}
+.card-head.margin {
+  margin-bottom: 10px;
+}
+.card-head:hover {
+  background-color: #1f282ba9;
+}
+.card-head .rotate {
+  animation-duration: 2s;
+  animation-name: rotation;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card-body {
+  padding: 5px;
+  background-color: #4bc0b021;
+  margin-bottom: 10px;
+}
+.card-body.hidden {
+  display: none;
 }
 
 .side {
+  min-height: 100vh;
   width: 6%;
   background-color: #4bc0b0;
 }
