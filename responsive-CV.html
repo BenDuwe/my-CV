@@ -6,44 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the curriculum Vitae of Ben Duwé">
     <script src="https://kit.fontawesome.com/27e67ac84a.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/responsive.css">
     <title>My CV - v2.0</title>
 </head>
 
-<body>
+<body style="--x: 0; --y: 0">
     <div id="page-wrapper" class="row">
         <div id="side" class="col-md-1"></div>
         <div id="main-wrapper" class="col-md-11">
             <div id="content-wrapper">
-                <section id="banner" role="banner">
-                    <header class="row">
-                        <div class="col-md-7">
-                            <h1>Ben Duwé</h1>
-                            <h2>Web Developer</h2>
-                            <p>Inspiring text about myself to hook recruiters</p>
-                        </div>
-                        <div id="pic" class="col-md-auto">
-                            <span class="dot"><img src="assets/profile picture.jpg" alt="Profile picture"></span>
-                        </div>
-                    </header>
-                </section>
+                <header>
+                    <section id="intro">
+                        <h1>Ben Duwé</h1>
+                        <h2>Web Developer</h2>
+                        <p>Inspiring text about myself to hook recruiters</p>
+                    </section>
+                    <div id="pic">
+                        <span class="dot"><img src="assets/profile picture.jpg" alt="Profile picture"></span>
+                    </div>
+                </header>
 
-                <div class="main row" role="main">
-                    <div class="contact col-12 order-2 col-md-6 order-md-1">
+                <div id="main-content" class="main row" role="main">
+                    <section id="contact" class="contact col-12 order-2 col-md-6 order-md-1">
                         <h3>Contact details</h3>
                         <h5>Mobile:</h5>
                         <p>(+32)473.49.62.30</p>
                         <h5>Email address:</h5>
                         <p>benduwee@gmail.com</p>
                         <h5>LinkedIn:</h5>
-                        <a class="icon" href="https://www.linkedin.com/in/ben-duwé-69776bb2" target="_blank" rel="noopener">
+                        <a class="icon" href="https://www.linkedin.com/in/ben-duwé-69776bb2" target="_blank"
+                            rel="noopener">
                             <p><i class="fab fa-linkedin"></i></p>
                         </a>
-                    </div>
-                    <div class="general col-12 order-2 col-md-6 order-md-1">
+                    </section>
+                    <section id="general" class="general col-12 order-2 col-md-6 order-md-1">
                         <h3>General</h3>
                         <h5>Residence:</h5>
                         <p>3740 Bilzen</p>
@@ -51,23 +47,23 @@
                         <p>10-01-1991</p>
                         <h5>Drivers-license:</h5>
                         <p>B</p>
-                    </div>
-                    <div class="education col-12 col-md-6 order-1">
+                    </section>
+                    <section id="education" class="education col-12 col-md-6 order-1">
                         <h3>Education</h3>
-                        <h4>University of Antwerp <span>(Batch 2015)</span></h4>
+                        <h4>University of Antwerp <span>(Graduated 2015)</span></h4>
                         <p>Master of Science in Biology</p>
                         <ul>
                             <li>· Graduated cum laude</li>
                         </ul>
-                        <h4>University of Hasselt <span>(Batch 2012)</span></h4>
+                        <h4>University of Hasselt <span>(Graduated 2012)</span></h4>
                         <p>Bachelor of Science in Biology</p>
                         <ul>
                             <li>· Graduated cum fructu</li>
                         </ul>
-                        <h4>Heilig Graf Institute Bilzen <span>(Batch 2009)</span></h4>
+                        <h4>Heilig Graf Institute Bilzen <span>(Graduated 2009)</span></h4>
                         <p>ASO Science-Math (8h.)</p>
-                    </div>
-                    <div class="experience col-12 col-md-6 order-1">
+                    </section>
+                    <section id="experience" class="experience col-12 col-md-6 order-1">
                         <h3>Work experience</h3>
                         <h4>CM &#38 Admin Planner <span>(2018-2019)</span></h4>
                         <h5>Yazaki Europe ltd.</h5>
@@ -75,8 +71,8 @@
                             <li>· Ensuring high customer satisfaction</li>
                             <li>· Deal with stressful situations</li>
                         </ul>
-                    </div>
-                    <div class="languages col-12 order-1 d-flex flex-wrap">
+                    </section>
+                    <section id="languages" class="languages col-12 order-1 d-flex flex-wrap">
                         <h3>Languages</h3>
                         <div class="dutch">
                             <h5>Dutch<span> | Native proficiency</span></h5>
@@ -90,8 +86,8 @@
                         <div class="german">
                             <h5>German<span> | basic</span></h5>
                         </div>
-                    </div>
-                    <div class="skills col-12 order-1 d-flex flex-wrap">
+                    </section>
+                    <section id="skills" class="skills col-12 order-1 d-flex flex-wrap">
                         <h3>Skill set</h3>
                         <div class="soft">
                             <h4>Soft skills:</h4>
@@ -112,7 +108,7 @@
                                 <li>· Git version control</li>
                             </ul>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -127,6 +123,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="scripts/myscript.js"></script>
 </body>
 
 </html>

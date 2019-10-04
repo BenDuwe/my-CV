@@ -1,0 +1,76 @@
+@import 'scrollbar';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+body {
+    background: radial-gradient(circle at var(--x) var(--y), #3f484b 0% , #2c383b 70%);
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    h1, h3, h4 {
+        font-family: 'Anton' , sans-serif;
+        color: #4bc0b0;
+    }
+    h3, h4 {
+        font-size: 0.9rem;
+        letter-spacing: 5px;
+        font-weight: normal;
+        span {
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+    }
+    h5 {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        span {
+            font-weight: lighter;
+        }
+    }
+    div, header, section, h1, h2, h3, h4, h5, p, span, ul , li {
+        pointer-events: none;
+    }
+    .icon {
+        z-index: 1;
+        pointer-events: all;
+    }
+}
+
+#main-wrapper {
+    padding: 20px 10px 20px 10px;
+}
+
+header {
+    display: flex;
+    padding-bottom:40px;
+    #intro {
+        width: 70%;
+        height: auto;
+        h1 {
+            text-transform: uppercase;
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+    #pic {
+        overflow: hidden;
+        width: 30%;
+        .dot {
+            border-radius: 50%;
+            img {
+                height: 120px;
+                border: 5px solid #4bc0b0;
+                border-radius: 50%;
+
+            }
+        }
+    }
+}
+
+#main-content {
+
+}
