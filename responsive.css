@@ -3,6 +3,7 @@
     padding:0px;
 }
 body {
+    background-color: #2c383b; /*done*/
 }
 
 h1 {
@@ -14,14 +15,14 @@ h1 {
 
 h1,
 h3 {
-    font-family: 'Anton', sans-serif;
-    color: #4bc0b0;
+    font-family: 'Anton', sans-serif; /*done*/
+    color: #4bc0b0; /*done*/
     text-transform: uppercase;
 }
 
 h4 {
-    font-family: 'Anton', sans-serif;
-    color: #4bc0b0;
+    font-family: 'Anton', sans-serif; /*done*/
+    color: #4bc0b0; /*done*/
     letter-spacing: 4px;
     font-size: 1em;
     -webkit-text-stroke: 1.1px #2c383b;
@@ -37,9 +38,9 @@ p,
 li,
 h5,
 h2 {
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 2px;
+    color: white; /*done*/
+    font-family: 'Source Sans Pro', sans-serif; /*done*/
+    letter-spacing: 2px; /*done*/
 }
 #page-wrapper.row {
         background-color: #2c383b;
