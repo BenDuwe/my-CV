@@ -17,7 +17,7 @@
 body {
   font-size: 0.9rem;
   display: flex;
-  background-color: #2c383b;
+  background-color: #1F363D;
 }
 
 #content-wrapper {
@@ -53,12 +53,17 @@ body {
   font-style: italic;
   font-weight: lighter;
 }
-#content-wrapper h2 {
-  font-size: 1rem;
-}
 #content-wrapper h3 {
   font-weight: lighter;
   font-size: 1rem;
+}
+#content-wrapper h4 {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+#content-wrapper .h4-style {
+  font-size: 0.7rem;
 }
 #content-wrapper h5 {
   font-size: 0.8rem;
