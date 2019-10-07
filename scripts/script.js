@@ -1,3 +1,8 @@
+/*******************************************************/
+/*****************Show/hide card body*******************/
+/*******************************************************/
+
+/*****************On-click*******************/
 let cards = document.querySelectorAll(".card-head");
 var bodies =  document.querySelectorAll(".card-body");
 var i;
@@ -9,7 +14,17 @@ for (i = 0; i < cards.length; i++) {
         var icon = this.querySelector('.fas');
         icon.classList.toggle('fa-plus');
         icon.classList.toggle('fa-minus');
-        card.classList.toggle("margin");
-        body.classList.toggle("hidden");
+        if (body.classList.contains("slideIn")){
+            body.classList.toggle("slideOut");
+            body.classList.toggle("slideIn");
+        } else if (body.classList.contains("slideOut")){
+            body.classList.toggle("slideIn");
+            body.classList.toggle("slideOut");
+        }
     });
-    }
+
+}
+
+/*****************On page-load*****************/
+
+

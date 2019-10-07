@@ -1,4 +1,4 @@
-.card-body .jc-sb, .card-head {
+.card-body .card-content .jc-sb, .card-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,10 +8,14 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-size: 95%;
+}
+
+.icon {
+  font-size: 1.5rem;
 }
 
 body {
+  font-size: 0.9rem;
   display: flex;
   background-color: #2c383b;
 }
@@ -49,39 +53,86 @@ body {
   font-style: italic;
   font-weight: lighter;
 }
+#content-wrapper h2 {
+  font-size: 1rem;
+}
 #content-wrapper h3 {
-  font-size: 1.2rem;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+#content-wrapper h5 {
+  font-size: 0.8rem;
+}
+
+.head-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head-wrapper #intro {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+.head-wrapper #intro h1 {
+  align-self: center;
+}
+
+#pic {
+  overflow: hidden;
+  width: auto;
+}
+#pic .dot {
+  border-radius: 50%;
+}
+#pic .dot img {
+  height: 200px;
+  border: 5px solid #4bc0b0;
+  border-radius: 50%;
 }
 
 .card-head {
+  margin-top: 10px;
   padding: 5px 5px 0px;
   background-color: #273235a9;
-  border-bottom: 2px solid #4bc0b0;
+  border-bottom: 1px solid #4bc0b0;
 }
 .card-head i {
   color: #4bc0b0;
 }
-.card-head.margin {
-  margin-bottom: 10px;
-}
 .card-head:hover {
   background-color: #1f282ba9;
 }
-.card-head .rotate {
-  animation-duration: 6s;
-  animation-delay: 4s;
+.card-head .animate {
+  animation-duration: 15s;
+  animation-delay: 2s;
   animation-name: rotation;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
 }
 
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
-  15% {
-    transform: rotate(360deg);
+  1% {
+    transform: rotate(-30deg);
   }
-  30% {
+  2% {
+    transform: rotate(30deg);
+  }
+  3% {
+    transform: rotate(-30deg);
+  }
+  4% {
+    transform: rotate(30deg);
+  }
+  5% {
+    transform: rotate(-30deg);
+  }
+  6% {
+    transform: rotate(30deg);
+  }
+  7% {
     transform: rotate(0deg);
   }
   to {
@@ -89,14 +140,23 @@ body {
   }
 }
 .card-body {
+  border-bottom: 1px solid #4bc0b0;
+}
+.card-body.slideIn, .card-body.slideOut {
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+.card-body.slideOut {
+  max-height: 300px;
+}
+.card-body .card-content {
   padding: 5px;
   background-color: #4bc0b021;
-  margin-bottom: 10px;
 }
-.card-body.hidden {
-  display: none;
-}
-
 .side {
   min-height: 100vh;
   width: 6%;

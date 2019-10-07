@@ -16,146 +16,180 @@
 
         <div id="content-wrapper">
         <!--*******************HEADER AREA************************-->
-        <h1>Ben Duwé</h1>
-        <h2>Web Developer</h2>
-        <p>Inspiring text about myself to hook recruiters</p>
+        <div class="head-wrapper">
+            <section id="intro">
+                <h1>Ben Duwé</h1>
+                <h2>Web Developer</h2>
+                <p>Inspiring text about myself to hook recruiters</p>
+            </section>
+    
+            <div id="pic">
+                <span class="dot"><img src="assets/profile picture.jpg" alt="Profile picture"></span>
+            </div>
+        </div>
+
 
         <!--*******************BODY AREA**************************-->
-        <p>
-            <h5 class="inline-h">LinkedIn:</h5>
-            <a class="icon" href="https://www.linkedin.com/in/ben-duwé-69776bb2" target="_blank" rel="noopener">
-                <span><i class="fab fa-linkedin"></i></span>
-            </a>
-        </p>
-        <p>
-            <h5 class="inline-h">GitHub:</h5>
-            <a class="icon" href="https://github.com/BenDuwe" target="_blank" rel="noopener">
-                <span><i class="fab fa-github-square"></i></span>
-            </a>
-        </p>
+        <div>
+            <p>
+                <h5 class="inline-h">LinkedIn:</h5>
+                <a class="icon" href="https://www.linkedin.com/in/ben-duwé-69776bb2" target="_blank" rel="noopener">
+                    <span><i class="fab fa-linkedin"></i></span>
+                </a>
+            </p>
+            <p>
+                <h5 class="inline-h">GitHub:</h5>
+                <a class="icon" href="https://github.com/BenDuwe" target="_blank" rel="noopener">
+                    <span><i class="fab fa-github-square"></i></span>
+                </a>
+            </p>
+        </div>
 
 
 
         <!--CONTACT-->
-        <div class="card-head margin collapsible">
+        <div id="contactHead" class="card-head ">
             <h3>Contact details</h3>
-            <i id="expand " class="fas fa-plus rotate"></i> <!--<i class="fas fa-minus"></i>-->
+            <i id="expand " class="fas fa-plus animate"></i> <!--<i class="fas fa-minus"></i>-->
         </div>
-        <div id="contact-body" class="card-body hidden">
-            <h5>Mobile:</h5>
-            <p>(+32)473.49.62.30</p>
-            <h5>Email address:</h5>
-            <p>benduwee@gmail.com</p>
+        <div id="contact-body" class="card-body slideIn">
+            <div class="card-content">
+                <h5>Mobile:</h5>
+                <p>(+32)473.49.62.30</p>
+                <h5>Email address:</h5>
+                <p>benduwee@gmail.com</p>
+            </div>
         </div>
 
         <!--GENERAL INFO-->
-        <div class="card-head margin collapsible">
+        <div id="generalHead" class="card-head ">
             <h3>General</h3>
-            <i id="expand " class="fas fa-plus rotate"></i> <!--<i class="fas fa-minus"></i>-->
+            <i id="expand " class="fas fa-plus animate"></i> <!--<i class="fas fa-minus"></i>-->
         </div>
-        <div id="general-body" class="card-body hidden">
-            <h5>Residence:</h5>
-            <p>3740 Bilzen</p>
-            <h5>Date of birth:</h5>
-            <p>10-01-1991</p>
-            <h5>Drivers-license:</h5>
-            <p>B</p>
+        <div id="general-body" class="card-body slideIn">
+            <div class="card-content">
+                <h5>Residence:</h5>
+                <p>3740 Bilzen</p>
+                <h5>Date of birth:</h5>
+                <p>10-01-1991</p>
+                <h5>Drivers-license:</h5>
+                <p>B</p>
+            </div>
         </div>
 
 
         <!--EDUCATION-->
-        <div class="card-head margin collapsible">
+        <div id="eduHead" class="card-head">
             <h3>Education</h3>
-            <i id="expand " class="fas fa-plus rotate"></i> <!--<i class="fas fa-minus"></i>-->
+            <i id="expand " class="fas fa-minus animate"></i> <!--<i class="fas fa-minus"></i>-->
         </div>
-        <div id="edu-body" class="card-body hidden">
-            <div class="jc-sb">
-                <h4 class="inline-h">University of Antwerp</h4>
-                <span class="h4-style">(Graduated 2015)</span>
+        <div id="edu-body" class="card-body slideOut">
+            <div class="card-content">
+                <div class="jc-sb">
+                    <h4 class="inline-h">University of Antwerp</h4>
+                    <span class="h4-style">(Graduated 2015)</span>
+                </div>
+                <p>Master of Science in Biology</p>
+                <ul>
+                    <li>· Graduated cum laude</li>
+                </ul>
+                <div class="jc-sb">
+                	<h4 class="inline-h">University of Hasselt</h4>
+                	<span class="h4-style">(Graduated 2012)</span>
+                </div>
+                <p>Bachelor of Science in Biology</p>
+                <ul>
+                    <li>· Graduated cum fructu</li>
+                </ul>
+                <div class="jc-sb">
+                    <h4 class="inline-h">Heilig Graf Institute Bilzen</h4>
+                    <span class="h4-style">(Graduated 2009)</span>
+                </div>
+                <p>ASO Science-Math (8h.)</p>
             </div>
-            <p>Master of Science in Biology</p>
-            <ul>
-                <li>· Graduated cum laude</li>
-            </ul>
-            <div class="jc-sb">
-            	<h4 class="inline-h">University of Hasselt</h4>
-            	<span class="h4-style">(Graduated 2012)</span>
-            </div>
-            <p>Bachelor of Science in Biology</p>
-            <ul>
-                <li>· Graduated cum fructu</li>
-            </ul>
-            <div class="jc-sb">
-                <h4 class="inline-h">Heilig Graf Institute Bilzen</h4>
-                <span class="h4-style">(Graduated 2009)</span>
-            </div>
-            <p>ASO Science-Math (8h.)</p>
         </div>
 
 
         <!--EXPERIENCE-->
-        <div class="card-head margin collapsible">
+        <div id="expHead" class="card-head">
             <h3>Work experience</h3>
-            <i id="expand " class="fas fa-plus rotate"></i> <!--<i class="fas fa-minus"></i>-->
+            <i id="expand " class="fas fa-minus animate"></i> <!--<i class="fas fa-minus"></i>-->
         </div>
-        <div id="exp-body" class="card-body hidden">
-            <div class="jc-sb">
-                <h4 class="inline-h">CM &#38 Admin Planner</h4>
-                <span class="h4-style">(2018-2019)</span>
+        <div id="exp-body" class="card-body slideOut">
+            <div class="card-content">
+                <div class="jc-sb">
+                    <h4 class="inline-h">CM &#38 Admin Planner</h4>
+                    <span class="h4-style">(2018-2019)</span>
+                </div>
+            	<h5>Yazaki Europe ltd.</h5>
+            	<ul>
+            	    <li>· Ensuring high customer satisfaction</li>
+            	    <li>· Deal with stressful situations</li>
+            	</ul>
             </div>
-        	<h5>Yazaki Europe ltd.</h5>
-        	<ul>
-        	    <li>· Ensuring high customer satisfaction</li>
-        	    <li>· Deal with stressful situations</li>
-        	</ul>
         </div>
 
 
         <!--LANGUAGES-->
-        <div class="card-head margin collapsible">
+        <div id="langHead" class="card-head">
             <h3>Languages</h3>
-            <i id="expand " class="fas fa-plus rotate"></i> <!--<i class="fas fa-minus"></i>-->
+            <i id="expand " class="fas fa-minus animate"></i> <!--<i class="fas fa-minus"></i>-->
         </div>
-        <div id="lang-body" class="card-body hidden">
-            <div class="dutch">
-                <h5>Dutch<span> | Native proficiency</span></h5>
-            </div>
-            <div class="english">
-                <h5>English<span> | Very good</span></h5>
-            </div>
-            <div class="french">
-                <h5>French<span> | basic</span></h5>
-            </div>
-            <div class="german">
-                <h5>German<span> | basic</span></h5>
+        <div id="lang-body" class="card-body slideOut">
+            <div class="card-content">
+                <div class="dutch">
+                    <h5>Dutch<span> | Native proficiency</span></h5>
+                </div>
+                <div class="english">
+                    <h5>English<span> | Very good</span></h5>
+                </div>
+                <div class="french">
+                    <h5>French<span> | basic</span></h5>
+                </div>
+                <div class="german">
+                    <h5>German<span> | basic</span></h5>
+                </div>
             </div>
         </div>
 
 
         <!--SKILLS-->
-        <div class="card-head margin collapsible">
+        <div id="skillHead" class="card-head">
             <h3>Skill set</h3>
-            <i id="expand " class="fas fa-plus rotate"></i> <!--<i class="fas fa-minus"></i>-->
+            <i id="expand " class="fas fa-minus animate"></i> <!--<i class="fas fa-minus"></i>-->
         </div>
-        <div id="skill-body" class="card-body hidden">
-            <div class="soft">
-                <h4>Soft skills:</h4>
-                <ul>
-                    <li>· Motivation</li>
-                    <li>· Critical thinker</li>
-                    <li>· Communication</li>
-                    <li>· Teamwork</li>
-                    <li>· Flexibility</li>
-                </ul>
-            </div>
-            <div class="hard">
-                <h4>Hard skills:</h4>
-                <ul>
-                    <li>· Microsoft office</li>
-                    <li>· HTML (Work in Progress)</li>
-                    <li>· CSS (Work in Progress)</li>
-                    <li>· Git version control</li>
-                </ul>
+        <div id="skill-body" class="card-body slideOut">
+            <div id="skill-content" class="card-content">
+                <div class="soft">
+                    <h4>Soft skills:</h4>
+                    <ul>
+                        <li>· Motivation</li>
+                        <li>· Critical thinker</li>
+                        <li>· Studious</li>
+                        <li>· Teamwork</li>
+                        <li>· Flexibility</li>
+                    </ul>
+                </div>
+                <div class="hard">
+                    <h4>Hard skills:</h4>
+                    <ul>
+                        <li>
+                            · <i class="fab fa-html5 icon"></i> (Work in Progress)
+                        </li>
+                        <li>
+                            · <i class="fab fa-css3-alt icon"></i>/<i class="fab fa-sass icon"></i> (Work in Progress)
+                        </li>
+                        <li>
+                            · <i class="fab fa-js icon"></i> (Work in Progress)
+                        </li>
+                        <li>
+                            · <i class="fab fa-php icon"></i> (Work in Progress)
+                        </li>
+                        <li>
+                            · <i class="fab fa-git icon"></i><i class="fab fa-git-alt icon"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
