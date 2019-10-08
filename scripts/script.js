@@ -4,8 +4,8 @@
 
 /*****************On-click*******************/
 let cards = document.querySelectorAll(".card-head");
-var bodies =  document.querySelectorAll(".card-body");
-var i;
+let bodies =  document.querySelectorAll(".card-body");
+let i;
 
 for (i = 0; i < cards.length; i++) {
     let card = cards[i]
@@ -25,6 +25,31 @@ for (i = 0; i < cards.length; i++) {
 
 }
 
-/*****************On page-load*****************/
+/*****************Page-width check to change slide-state*****************/
+let scrWidth = document.body.clientWidth;
+
+if (scrWidth >= 820){
+    let contactCard = document.getElementById("contact-body")
+    let generalCard = document.getElementById("general-body")
+    if (contactCard.classList.contains("slideIn")){
+        contactCard.classList.toggle("slideOut");
+        contactCard.classList.toggle("slideIn");
+    }
+    if (generalCard.classList.contains("slideIn")){
+        generalCard.classList.toggle("slideOut");
+        generalCard.classList.toggle("slideIn");
+    }
+    let contIcon = document.querySelector("#contactHead .fas");
+    let genIcon = document.querySelector("#generalHead .fas");
+    contIcon.classList.toggle('fa-plus');
+    contIcon.classList.toggle('fa-minus');
+    genIcon.classList.toggle('fa-plus');
+    genIcon.classList.toggle('fa-minus');
+
+
+
+}
+
+
 
 
