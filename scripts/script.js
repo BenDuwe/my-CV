@@ -26,30 +26,48 @@ for (i = 0; i < cards.length; i++) {
 }
 
 /*****************Page-width check to change slide-state*****************/
-let scrWidth = document.body.clientWidth;
+function sliderCheck(){
 
-if (scrWidth >= 820){
+    let scrWidth = document.body.clientWidth;
     let contactCard = document.getElementById("contact-body")
     let generalCard = document.getElementById("general-body")
-    if (contactCard.classList.contains("slideIn")){
-        contactCard.classList.toggle("slideOut");
-        contactCard.classList.toggle("slideIn");
+
+
+    if (scrWidth >= 820){
+        if (contactCard.classList.contains("slideIn")){
+            contactCard.classList.toggle("slideOut");
+            contactCard.classList.toggle("slideIn");
+        }
+        if (generalCard.classList.contains("slideIn")){
+            generalCard.classList.toggle("slideOut");
+            generalCard.classList.toggle("slideIn");
+        }
+
+        for (i = 0; i < 2; i++) {
+            let card = cards[i];
+            var icon = card.querySelector('.fas');
+            if (icon.classList.contains("fa-plus")){
+                icon.classList.toggle('fa-plus');
+                icon.classList.toggle('fa-minus');
+            }
+        }
+    } else {
+        if (contactCard.classList.contains("slideOut")){
+            contactCard.classList.toggle("slideOut");
+            contactCard.classList.toggle("slideIn");
+        }
+        if (generalCard.classList.contains("slideOut")){
+            generalCard.classList.toggle("slideOut");
+            generalCard.classList.toggle("slideIn");
+        }
+
+        for (i = 0; i < 2; i++) {
+            let card = cards[i];
+            var icon = card.querySelector('.fas');
+            if (icon.classList.contains("fa-minus")){
+                icon.classList.toggle('fa-plus');
+                icon.classList.toggle('fa-minus');
+            }
+        }
     }
-    if (generalCard.classList.contains("slideIn")){
-        generalCard.classList.toggle("slideOut");
-        generalCard.classList.toggle("slideIn");
-    }
-    let contIcon = document.querySelector("#contactHead .fas");
-    let genIcon = document.querySelector("#generalHead .fas");
-    contIcon.classList.toggle('fa-plus');
-    contIcon.classList.toggle('fa-minus');
-    genIcon.classList.toggle('fa-plus');
-    genIcon.classList.toggle('fa-minus');
-
-
-
 }
-
-
-
-
