@@ -34,31 +34,38 @@
 body {
   background: radial-gradient(circle at var(--x) var(--y), #3f484b 0%, #2c383b 70%);
   color: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
 body h1, body h3, body h4 {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton' , sans-serif;
   color: #4bc0b0;
 }
+
 body h3, body h4 {
   font-size: 0.9rem;
   letter-spacing: 5px;
   font-weight: normal;
 }
+
 body h3 span, body h4 span {
   font-style: italic;
   font-size: 0.8rem;
 }
+
 body h5 {
   font-size: 0.8rem;
   letter-spacing: 2px;
 }
+
 body h5 span {
   font-weight: lighter;
 }
+
 body div, body header, body section, body h1, body h2, body h3, body h4, body h5, body p, body span, body ul, body li {
   pointer-events: none;
 }
+
 body .icon {
   z-index: 1;
   pointer-events: all;
@@ -69,30 +76,36 @@ body .icon {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 40px;
 }
+
 header #intro {
   width: 70%;
   height: auto;
 }
+
 header #intro h1 {
   text-transform: uppercase;
   font-size: 4rem;
   font-style: italic;
   font-weight: bold;
 }
+
 header #pic {
   overflow: hidden;
   width: 30%;
 }
+
 header #pic .dot {
   border-radius: 50%;
 }
+
 header #pic .dot img {
   height: 120px;
   border: 5px solid #4bc0b0;
   border-radius: 50%;
 }
-
 /*# sourceMappingURL=responsive.css.map */
