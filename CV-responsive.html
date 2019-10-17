@@ -8,12 +8,16 @@
         <link href="assets/icons8-resume-website-50.png" rel="icon" type="image/x-icon" />
         <script src="https://kit.fontawesome.com/27e67ac84a.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Anton|Source+Sans+Pro&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/resp-style.css">
+        <link  rel="stylesheet" href="css/resp-style.css">
+        <link media="print" rel="stylesheet" href="css/print.css">
         <title>CV Ben Duwé</title>
     </head>
     <body onload="sliderCheck()" onresize="sliderCheck()">
         <!-- SIDEBAR
         <div class="side"></div> -->
+        <button id="prt-btn" class="b-hidden" onclick="window.print();return false;">
+            <i class="fas fa-print"> <span class="t-hidden">Printer version</span></i>
+        </button>
 
         <div id="content-wrapper">
         <!--*******************HEADER AREA************************-->
@@ -26,7 +30,7 @@
                     </section>
             
                     <div id="pic">
-                        <span class="dot"><img src="assets/profile picture.jpg" alt="Profile picture"></span>
+                        <img src="assets/profile picture.jpg" alt="Profile picture">
                     </div>
                 </div>
         
@@ -85,7 +89,7 @@
                         <p class="btm-spc">3740 Bilzen</p>
                         <h5>Date of birth:</h5>
                         <p class="btm-spc">10-01-1991</p>
-                        <h5>Drivers-license:</h5>
+                        <h5>Driver's license:</h5>
                         <p class="btm-spc">B</p>
                     </div>
                 </div>
@@ -133,7 +137,7 @@
                 <div id="exp-body" class="card-body slideOut">
                     <div class="card-content">
                         <div class="jc-sb">
-                            <h4 class="inline-h">CM &#38 Admin Planner</h4>
+                            <h4 class="inline-h">CM & Admin Planner</h4>
                             <span class="h4-style">(2018-2019)</span>
                         </div>
                         <h5>Yazaki Europe ltd.</h5>
@@ -197,30 +201,35 @@
                             <h4>Hard skills:</h4>
                             <ul class="btm-spc">
                                 <li>
-                                    · <i class="fab fa-html5 icon"></i> (Work in Progress)
+                                    · <i class="fab fa-html5 icon h-skill">
+                                        <span>HTML</span>
+                                    </i> (Work in Progress)
                                 </li>
                                 <li>
-                                    · <i class="fab fa-css3-alt icon"></i>/<i class="fab fa-sass icon"></i> (Work in Progress)
+                                    · <i class="fab fa-css3-alt icon h-skill">
+                                        <span>CSS</span>
+                                    </i>/<i class="fab fa-sass icon h-skill"></i> (Work in Progress)
                                 </li>
                                 <li>
-                                    · <i class="fab fa-js icon"></i> (Work in Progress)
+                                    · <i class="fab fa-js icon h-skill"></i> (Work in Progress)
+                                    
                                 </li>
                                 <li>
-                                    · <i class="fab fa-php icon"></i> (Work in Progress)
+                                    · <i class="fab fa-php icon h-skill"></i> (Work in Progress)
                                 </li>
                                 <li>
-                                    · <i class="fab fa-git-alt icon"></i><i class="fab fa-git icon"></i>
+                                    · <i class="fab fa-git-alt icon h-skill"></i><i class="fab fa-git icon h-skill"></i>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer>
-                <div>&#9400;reated by Ben Duwé</div>
-                <!-- <div class="divide">|</div> -->
-            </footer>
         </div>
+        <footer>
+            <div>&#9400;reated by Ben Duwé</div>
+            <!-- <div class="divide">|</div> -->
+        </footer>
 
 <script src="scripts/script.js"></script>
     
