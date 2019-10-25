@@ -120,4 +120,13 @@ footer {
   #pic img {
     height: 180px;
   }
+  #skill-content .hard ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 120px;
+    li {
+      height: 25px;
+    }
+  }
 }
