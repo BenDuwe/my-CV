@@ -28,6 +28,14 @@
   transform: translateX(-50%) translateY(90%);
 }
 
+.qr-block {
+  padding: 5px;
+  display: none;
+}
+.qr-block .qr {
+  width: 120px;
+}
+
 body {
   overflow-x: hidden;
   font-size: 0.9rem;

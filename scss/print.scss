@@ -1,3 +1,8 @@
+.qr-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 body {
   width: 21cm;
   min-height: 29.7cm;
@@ -106,6 +111,10 @@ footer {
 }
 
 @media print and (min-width: 21.1cm) {
+  .qr-block {
+    display: none;
+  }
+
   body {
     width: 29.7cm;
     min-height: 21cm;
