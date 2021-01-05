@@ -55,11 +55,13 @@ body {
 }
 
 #content-wrapper {
-  padding-bottom: 2.5rem;
-  padding-bottom: 25px;
+  height: fit-content;
+  position: relative;
   color: #2c383b;
   width: 100%;
   padding: 10px;
+  padding-bottom: 2rem;
+  /* Footer height */
 }
 #content-wrapper li {
   list-style: none;
@@ -127,7 +129,7 @@ body {
   width: auto;
 }
 #pic img {
-  height: 200px;
+  height: 190px;
   border: 5px solid #2c383b;
   border-radius: 50%;
 }
@@ -207,6 +209,11 @@ body {
   margin-right: 15px;
 }
 
+#skill-content {
+  display: flex;
+  justify-content: space-around;
+}
+
 #skill-content li {
   margin-bottom: 10px;
 }
@@ -230,19 +237,27 @@ body {
   color: #e84f32;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  /* Footer height */
+  color: #2c383b;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+
 @media only screen and (min-width: 820px) {
   body {
     background: linear-gradient(90deg, #9dcbe9 0%, #9dcbe9 35%, #ffffff 35%, #ffffff 100%);
   }
 
-  .page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-
   #content-wrapper {
-    padding-bottom: 2.5rem;
-    /* Footer height */
     margin: 10px 5px;
     display: flex;
     justify-content: space-evenly;
@@ -264,22 +279,6 @@ body {
   #content-wrapper .container2 #skill-content div {
     width: 50%;
   }
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  color: #fff;
-  align-self: flex-end;
-  justify-self: flex-end;
-  display: flex;
-  font-size: 10px;
-  letter-spacing: 2px;
-  padding: 5px;
-}
-footer .divide {
-  margin: 0 3px;
 }
 
 /*# sourceMappingURL=resp-style.css.map */
